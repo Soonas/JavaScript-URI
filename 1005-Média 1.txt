@@ -1,0 +1,10 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var a = Number(lines[0]);
+var b = Number(lines[1]);
+
+var soma = a3.5 + b7.5;
+var div = soma/11;
+
+console.log("MEDIA = " + div.toFixed(5));

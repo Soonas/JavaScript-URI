@@ -1,0 +1,10 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var number = Number(lines[0]);
+var value = Number(lines[1]);
+var price = parseFloat(lines[2]);
+
+var salary = Number(value * price);
+console.log("NUMBER = "+ number);
+console.log("SALARY = U$ "+ salary.toFixed(2));

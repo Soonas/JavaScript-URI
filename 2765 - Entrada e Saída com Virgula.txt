@@ -1,0 +1,15 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+
+var lines = input.split('\n');
+
+
+var l1 = lines[0].split(',');
+
+
+//Imprima a primeira parte da frase
+var frase  = l1[0];
+
+//Imprima a segunda parte da frase
+var frase2  = l1[1];
+
+console.log(frase +"\n"+ frase2);

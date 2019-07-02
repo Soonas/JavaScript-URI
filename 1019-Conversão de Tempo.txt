@@ -1,0 +1,13 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var n = Number(lines[0]);
+//entra em segundos e sai em horas:minutos:segundos
+
+var h = n/3600;
+h = Math.trunc(h);
+var m = (n % 3600)/60;
+m = Math.trunc(m);
+var s = n%60;
+
+console.log(h.toFixed(0) +":"+ m.toFixed(0) + ":"+ s.toFixed(0));

@@ -1,0 +1,10 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var tempo = Number(lines[0]);
+var velocidade = Number(lines[1]);
+
+var calculo = tempo * velocidade;
+var litros = calculo/12;
+
+console.log(litros.toFixed(3));
