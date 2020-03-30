@@ -1,0 +1,26 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var valor = Number(lines[0]);
+console.log(valor);
+
+console.log(Math.trunc(valor/100)+" nota(s) de R$ 100,00");
+var resto = (valor%100);
+
+console.log(Math.trunc(resto/50)+" nota(s) de R$ 50,00");
+resto = (resto%50);
+
+console.log(Math.trunc(resto/20)+" nota(s) de R$ 20,00");
+resto = (resto%20);
+
+console.log(Math.trunc(resto/10)+" nota(s) de R$ 10,00");
+resto = (resto%10);
+
+console.log(Math.trunc(resto/5)+" nota(s) de R$ 5,00");
+resto = (resto%5);
+
+console.log(Math.trunc(resto/2)+" nota(s) de R$ 2,00");
+resto = (resto%2);
+
+console.log(Math.trunc(resto/1)+" nota(s) de R$ 1,00");
+resto = (resto%1);

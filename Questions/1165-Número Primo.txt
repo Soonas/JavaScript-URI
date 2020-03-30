@@ -1,0 +1,22 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var a = Number(lines[0]);
+var i = 1;
+var cont = 0;
+
+while(i <= a){
+var y = Number(lines[i]);
+
+for(var d = 1; d <= y;d++){
+if(y % d === 0){
+cont++;
+}
+}
+if(cont == 2){
+console.log(y + " eh primo");
+}else{
+console.log(y + " nao eh primo");
+}
+cont = 0;
+i++;
+}

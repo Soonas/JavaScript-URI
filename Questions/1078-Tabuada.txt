@@ -1,0 +1,13 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var n = Number(lines[0]);
+var i = 1;
+
+if (n > 2 && n < 1000){
+while(i <= 10){
+var mult = i * n;
+console.log(i+ " x " + n + " = " + mult);
+i++;
+}
+}

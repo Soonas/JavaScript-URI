@@ -1,0 +1,20 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split(' ');
+
+var a = Number(lines[0]);
+var b = Number(lines[1]);
+var c = Number(lines[2]);
+
+var maior;
+
+if(a > b && a > c){
+maior = a;
+}
+else if(b > a && b > c){
+maior = b;
+}
+else if(c > a && c > b){
+maior = c;
+}
+
+console.log(maior+(" eh o maior"));

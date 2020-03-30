@@ -1,0 +1,35 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var i = 0;
+var rep = Number(lines[i]);
+
+while(rep !== 0){
+var rep2 = 0;
+i++;
+
+var origem = lines[i].split(" ");
+    var origem1 = Number(origem[0]);
+    var origem2 = Number(origem[1]);
+while(rep2 <= rep){
+    i++;
+var local = lines[i].split(" ");
+var a = Number(local[0]);
+var b = Number(local[1]);
+    if(a > origem1 && b > origem2){
+        console.log("NE");
+    }else if(a > origem1 && b < origem2){
+        console.log("SE");
+    }else if(a < origem1 && b < origem2){
+        console.log("SO");
+    }else if(a < origem1 && b > origem2){
+        console.log("NO");
+    }else if(a == origem1){
+        console.log("divisa");
+    }else if(b == origem2){
+        console.log("divisa");
+    }
+rep2++;
+}
+rep = Number(lines[i]);
+}

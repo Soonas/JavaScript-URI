@@ -1,0 +1,34 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var a = Number(lines[0]);
+//to.Fixed(2)
+
+if(a > 0 && a <= 400){
+var percentual = (a * 15)/100;
+var novo = a + percentual;
+var porcento = "15 %";
+}
+else if(a > 400 && a <= 800){
+percentual = (a * 12)/100;
+novo = a + percentual;
+porcento = "12 %";
+}
+else if(a > 800 && a <= 1200){
+percentual = (a * 10)/100;
+novo = a + percentual;
+porcento = "10 %";
+
+}
+else if(a > 1200 && a <= 2000){
+percentual = (a * 7)/100;
+novo = a + percentual;
+porcento = "7 %";
+
+}else{
+percentual = (a * 4)/100;
+novo = a + percentual;
+porcento = "4 %";
+
+}
+console.log("Novo salario: "+novo.toFixed(2)+"\nReajuste ganho: "+percentual.toFixed(2)+"\nEm percentual: "+porcento);

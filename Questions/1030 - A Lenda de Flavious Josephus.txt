@@ -1,0 +1,25 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var n = lines[0];
+var i,j = 1,k,a = 1,l = 0,b = 1,d;
+
+for(i = 0; i < n; i++){
+    d = lines[j].split(" ");
+    j++;
+    var pessoas = Number (d[0]);
+    var morte = Number (d[1]);
+    var opcoes = [];
+        for(k = 0; k < pessoas; k++){
+            opcoes[k] = a;
+            a++;
+        }
+        while(opcoes.length > 1){
+            l = (l + (morte - 1)) % opcoes.length;
+            opcoes.splice(l,1);
+        }
+    console.log('Case '+b+': ' + opcoes[0]);
+    b++;
+    l = 0;
+    a = 1;
+}

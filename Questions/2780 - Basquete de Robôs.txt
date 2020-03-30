@@ -1,0 +1,24 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+
+var lines = input.split(' ');
+
+
+
+var d  = Number(lines[0]);
+
+
+if(d <= 800){
+    cesta = 1;
+
+}
+else if(800 < d && d <= 1400){
+
+	cesta = 2;
+
+}else{
+    
+     	cesta = 3;
+
+}
+
+console.log(cesta);
