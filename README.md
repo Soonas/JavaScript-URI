@@ -1,35 +1,18 @@
-<style>
-  .container {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-  }
-  .content a {
-    text-align: center;
-  }
-</style>
-
 # 💁‍♀️ JavaScript-URI
 
 ## 🤗 Plataforma & Linguagem utilizadas:
 
-<div class="container">
-  <div class="content">    
-    <h3>Plataforma</h3>
-    <img src="https://2.bp.blogspot.com/-NUevUKTYhdc/VLrx4-PbbhI/AAAAAAAABi4/Fjxx1_1q_hU/s1600/URI.png" alt="URI">
-    <a href="https://www.urionlinejudge.com.br/judge/en/login">Site Uri Online Judge</a>
-  </div>
-    
-  <div class="content">
-    <h3>Linguagem</h3>
-    <img height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
-    <a href="https://devdocs.io/javascript/">Documentação JavaScript</a>
-  </div>
-</div>
+### Plataforma
+
+<img src="https://2.bp.blogspot.com/-NUevUKTYhdc/VLrx4-PbbhI/AAAAAAAABi4/Fjxx1_1q_hU/s1600/URI.png" alt="URI">
+
+[Site Uri Online Judge](https://www.urionlinejudge.com.br/judge/en/login)
+
+### Linguagem
+
+<img height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
+
+[Documentação JavaScript](https://devdocs.io/javascript/")
 
 ## 📖 Sobre: 
 
