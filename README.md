@@ -1,4 +1,17 @@
-<link rel="stylesheet" href="style.css">
+<style>
+  .container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content a {
+    text-align: center;
+  }
+</style>
 
 # 💁‍♀️ JavaScript-URI
 
